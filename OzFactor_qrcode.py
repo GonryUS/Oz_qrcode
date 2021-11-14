@@ -19,10 +19,10 @@ with st.form(key='my_form'):
 if aplicar:
   try:
     st.balloons()
-    st.header('Bem vindo a rede {SSID}'.format(SSID=SSID))
-    st.subheader('KEEP CALM')
-    st.subheader('Aponte a câmera do celular no QR Code!')
+    st.header('WI-FI: {SSID}'.format(SSID=SSID))
+    st.subheader('Para se conectar à rede, ligue a câmera do seu celular e aponte para a imagem abaixo:')
     qr_image = qr.wifi_qrcode(SSID, False, 'WPA', Senha)
+    st.write('Aponte a câmera do celular no QR Code!')
     buffer = BytesIO()
     qr_image.save(buffer, format='pdf')
     st.image(qr_image, caption="OzFactor by @OzBeto")
