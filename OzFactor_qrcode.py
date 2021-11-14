@@ -24,8 +24,8 @@ if aplicar:
     st.subheader('Aponte a câmera do celular no QR Code!')
     qr_image = qr.wifi_qrcode(SSID, False, 'WPA', Senha)
     buffer = BytesIO()
-    qr_image.save(buffer, format='png')
+    qr_image.save(buffer, format='pdf')
     st.image(qr_image, caption="OzFactor by @OzBeto")
-    st.download_button(label='Clique aqui para baixar', data=buffer.getvalue(), file_name="qr_code.png", mime="image/png")
+    st.download_button(label='Clique aqui para baixar', data=buffer.getvalue(), file_name="qr_code.pdf", mime="application/pdf")
   except RuntimeError as e:
     st.write(e)
