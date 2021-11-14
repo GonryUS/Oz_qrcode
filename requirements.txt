@@ -1,1 +1,1 @@
-wifi_qrcode_generator == 7.1.2
+wifi_qrcode_generator == '7.1.2'
