@@ -25,7 +25,7 @@ if aplicar:
     st.write('Aponte a câmera do celular no QR Code!')
     buffer = BytesIO()
     qr_image.save(buffer, format='pdf')
-    st.image(qr_image, caption="OzFactor by @OzBeto")
+    st.image(qr_image, caption="WI-FI {SSID}. OzFactor by @OzBeto".format(SSID=SSID))
     st.download_button(label='Clique aqui para baixar', data=buffer.getvalue(), file_name="qr_code.pdf", mime="application/pdf")
   except RuntimeError as e:
     st.write(e)
