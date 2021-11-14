@@ -1,0 +1,4 @@
+Streamlit
+wifi_qrcode_generator
+io
+Pillow
