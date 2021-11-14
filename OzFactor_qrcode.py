@@ -6,7 +6,7 @@ from tempfile import TemporaryFile
 from PIL import Image
 from io import BytesIO
 
-components.iframe("https://docs.streamlit.io/en/latest")
+components.iframe("https://www.google.com")
 with st.form(key='my_form'):
 
   st.title('OzFactor')
