@@ -1,11 +1,12 @@
 
 import wifi_qrcode_generator as qr
 import streamlit as st
+import streamlit.components.v1 as components
 from tempfile import TemporaryFile
 from PIL import Image
 from io import BytesIO
 
-
+components.iframe("https://docs.streamlit.io/en/latest")
 with st.form(key='my_form'):
 
   st.title('OzFactor')
