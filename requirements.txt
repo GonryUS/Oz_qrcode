@@ -1,4 +1,1 @@
-Streamlit
-wifi_qrcode_generator
-io
-Pillow
+wifi_qrcode_generator == 7.1.2
